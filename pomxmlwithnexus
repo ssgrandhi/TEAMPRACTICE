@@ -1,0 +1,17 @@
+ <repositories>
+    <repository>
+      <id>freshtaskgroup</id>
+      <url>http://192.168.0.31:8081/nexus/content/groups/freshtaskgroup/</url>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>jiogroup</id>
+ <url>http://192.168.0.31:8081/nexus/content/repositories/jiogroup/</url>
+    </snapshotRepository>
+    <repository>
+      <id>jioreleasegroup</id>
+      <url>http://192.168.0.31:8081/nexus/content/repositories/jioreleasegroup/</url>
+    </repository>
+  </distributionManagement>
+</project>
