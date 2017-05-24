@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+
+<servers>
+    <server>
+      <id>jiogroup</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+    <server>
+      <id>jioreleasegroup</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>jioproxygroup</id>
+      <name>freshtask</name>
+      <url>http://192.168.0.31:8081/nexus/content/repositories/jioproxygroup/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
