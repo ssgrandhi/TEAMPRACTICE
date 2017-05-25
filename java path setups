@@ -1,0 +1,24 @@
+
+alternatives --install /usr/bin/java java /root/maveen/jdk1.8.0_121/bin/java 2
+alternatives --install /usr/bin/jar jar /home/rob/jdk1.8.0_121/bin/java 2
+alternatives --install /usr/bin/javac javac /root/maveen/jdk1.8.0_121/bin/java 2
+alternatives --set jar /root/maveen/jdk1.8.0_121/bin/jar
+alternatives --set javac /root/maveen/jdk1.8.0_121/bin/javac
+
+ export JAVA_HOME= /root/maveen/jdk1.8.0_121
+export JRE_HOME= /root/maveen/jdk1.8.0_121/jre
+export PATH=$PATH: /root/maveen/jdk1.8.0_121/jre/bin
+export M2_HOME=/root/maveen/apache-maven-3.3.9
+export PATH=${M2_HOME}/bin:${PATH}
+/root/maveen/apache-maven-3.3.9
+
+    alternatives --install /usr/bin/java java  /home/rob/jdk1.8.0_121/bin/java 2
+alternatives --install /usr/bin/jar jar /home/rob/jdk1.8.0_121/bin/java 2
+alternatives --install /usr/bin/javac javac  /home/rob/jdk1.8.0_121/bin/java 2
+alternatives --set jar /home/rob/jdk1.8.0_121/bin/jar
+alternatives --set javac /home/rob/jdk1.8.0_121/bin/javac
+
+
+export JAVA_HOME= /home/rob/jdk1.8.0_121/
+export JRE_HOME=/home/rob/jdk1.8.0_121/jre
+export PATH=$PATH:/home/rob/jdk1.8.0_121/jre/bin
