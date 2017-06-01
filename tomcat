@@ -1,0 +1,18 @@
+https://github.com/gabrielf/maven-samples/tree/master/multi-module
+
+
+TOMCAT=/opt/apache-tomcat-7.0.78
+TOMCAT_WEBAPPS=$TOMCAT/webapps
+TOMCAT_CONFIG=$TOMCAT/conf/server.xml
+TOMCAT_START=$TOMCAT/bin/startup.sh
+
+PID=`ps aux | grep -v grep| grep -v "$0" | grep $tomcat| wc -l | awk '{print $1}'`
+if [ $PID != "0" ];
+then
+
+TOMCAT_SHUTDOWN=$TOMCAT/bin/shutdown.sh
+$TOMCAT_SHUTDOWN
+
+
+rm -rf /opt/apache-tomcat-7.0.78/webapps/ROOT/*
+ssh -i 
